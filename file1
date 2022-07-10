@@ -1,32 +1,19 @@
 package Java;
 
-public class ThreadDemo extends Thread{
-	
-	
-	  public void run() {
-	  
-	  for(int i=0;i<3;i++) { System.out.println(" Child Thread Executing");
-	  
-	  } }
-	 
-	  public void start(int j) {
-		  
-		   System.out.println(j);
-		  
-		  } 
-		 
-	class Mythread
-	{
-		
-	
-	public static void main(String[] args) {
-		
-		ThreadDemo t =new ThreadDemo();
-		t.start(10);
-		for(int i=0; i<3; i++) {
-			System.out.println(" Main Thread Executing");
-		}
-		
-	}
+public class StringConstructors {
 
-}}
+	public static void main(String[] args) {
+
+		char[] ch = { 'a', 'b', 'c', 'd' };
+
+		String S = new String(ch);
+		System.out.println(S);
+		
+		byte[] b= {110, 111, 114};
+		String S1 = new String(b);
+		
+		System.out.println(S1);
+
+	}
+}
+
